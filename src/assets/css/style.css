@@ -2,44 +2,51 @@
 
 /* app */
 #app {
-    font-family: Outfit;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-  background-color: #f8f8f8;
-  
+  font-family: Outfit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+background-color: rgb(167, 216, 221);
+
 }
-  
-  nav {
-    padding: 30px;
-    background-color: #f8f8f8;
-  }
-  
-  nav a {
-    font-weight: bold;
-    color: #2c3e50;
-  }
-  
-  nav a.router-link-exact-active {
-    color: #42b983;
-  }
+
+nav {
+  padding: 30px;
+  background-color: #f8f8f8;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
 
 /*Universal selector*/
 
 /*Custom variables*/
 
 ::-webkit-scrollbar{
-  display: none;
+display: none;
 }
 
 
 
 /*Logo*/
 img[alt='logo']{
-  width: 5rem;
+width: 5rem;
 }
 /* wrapper */
 :is(.wrapper){
-  display:grid;
-  grid-template-rows: auto minmax(100dvh, 100%) auto;
+display:grid;
+grid-template-rows: auto minmax(100dvh, 100%) auto;
+}
+
+.headmain{
+  color: blue;
+  font: bold;
+  font-size: 50px;
+
 }
