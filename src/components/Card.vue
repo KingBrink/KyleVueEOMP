@@ -1,15 +1,20 @@
 <template>
-    <div>
-        <p>hello</p>
+  <div class="card">
+    <div class="card-header">
+      <slot name="cardHeader"></slot>
     </div>
-  </template>
-  
-  <script>
-  export default {
+    <div class="card-body">
+      <slot name="cardBody"></slot>
+    </div>
+  </div>
+</template>
+<script>
+export default {
     name:"CardComp"
 };
-  </script>
-  
-  <style>
-  
-  </style>
+</script>
+<style scoped>
+.card {
+    width: 18rem;
+}
+</style>
