@@ -8,12 +8,15 @@
   </div>
 </template>
 <script>
-import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
+import NavBar from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import 'animate.css';
 export default {
   components: {
     NavBar,
-    Footer,
+    Footer
   },
   computed:{
     getHome(){
@@ -46,7 +49,11 @@ mounted(){
   this.getProjects
   this.getTestimonials
   this.getContact
+  AOS.init()
 },
+
+  
+
 } 
 
 

@@ -1,10 +1,10 @@
 <template>
     
    <div class="container-fluid home">
-       <div class="img-box" data-aos="fade-right">
+       <div class="img-box animate__animated animate__fadeInUp animate__slow" >
            <img src="https://kingbrink.github.io/all-images/images/kyle8.PNG" class="main-img" alt="" loading="lazy">
        </div>
-       <div class="info" data-aos="fade-left">
+       <div class="info animate__animated animate__fadeInDown animate__slow">
            <h1>I'm <span class="name">Kyle</span> Brink</h1>
            <p v-if="title">
                <span> {{ title }}</span>
@@ -87,6 +87,7 @@ animation: pulse512 1.5s infinite;
    align-items:center ;
    gap: 250px;
  margin-top: 140px;
+
 }
 
    .info h1{
@@ -141,6 +142,39 @@ animation: pulse512 1.5s infinite;
    flex-direction: column;
    gap: 0px;
 }   
+.img-box{
+         background: url('https://kingbrink.github.io/all-images/images/wave8.png');
+         background-size:cover;
+         background-position: center;
+         width: 300px;
+         transition: bottom 1s, left 1s;
+         }
+         .main-img {
+             width: 250px;
+             
+             }
+             .info h1{
+       font-size: 40px;
+       color: #212121; 
+   }
+   .info p {
+       color: #606163;
+       line-height: 25px;
+       padding-top: 25px;
+       font-size: 20px;
+   }
+   .info .button {
+       display: inline-block;
+        margin: 25px 0; 
+       
+   }
+   
+   .icons a {
+       font-size: 25px;
+       color: #606163;
+       margin-right: 15px;
+       margin-left: 15px;
+   }
 }
 @media (min-width:501px) and (max-width:800px) {
    .home{

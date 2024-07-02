@@ -35,13 +35,13 @@
                <button type="button" id="clearButton" class="btn" @click.prevent="clearForm()">Clear</button>
              </div>
 
-             <div class="deats row mx-5">
+             <div class="deats row mx-2 cinfo">
                <div class="">
-                 <a href="mailto:kyle.brink1602@gmail.com" class="my-3 mail" mail><i
+                 <a href="mailto:kyle.brink1602@gmail.com" class="my-3 mail " style="font-size:15px;" mail><i
                      class="fa fa-envelope"></i>kyle.brink1602@gmail.com</a>
                </div>
-               <div class="col-6">
-                 <text class=""><i class="fa fa-phone"></i> +27 67 404 6393</text>
+               <div class="col-12">
+                 <text class="" style="font-size:15px;"><i class="fa fa-phone"></i> +27 67 404 6393</text>
                </div>
              </div>
            </form>
@@ -152,5 +152,10 @@ export default{
 
 .social-icons i {
    font-size: 24px; /* Adjust icon size as needed */
+}
+@media (min-width:300px) and (max-width:500px) {
+  .cinfo{
+    font-size: 5px;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar bg-body-tertiary fixed-top mr-4">
+  <nav class="navbar fixed-top mr-4">
     <div class="container">
       <router-link class="navbar-brand" to="/">
         <img class="img-fluid w" src="https://kingbrink.github.io/all-images/images/logo.png" alt="logo">
@@ -51,10 +51,9 @@
     font-weight: 600;
   }
   
-  .navigation{
-      background: #fff;
-      color: #fff8f8;
-      mix-blend-mode: difference;
+  .navbar{
+      background-color: #0F4C75;
+      /* mix-blend-mode: difference; */
   }
   
   .navigation.black{
@@ -81,7 +80,7 @@
   .navigation2{
     display: none;
   }
-  
+ 
   .offcanvas{
     text-align: left;
     background: #f8f8f8;
