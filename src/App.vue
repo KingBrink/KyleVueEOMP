@@ -46,9 +46,12 @@ mounted(){
   this.getProjects
   this.getTestimonials
   this.getContact
-}
+},
 } 
+
+
 </script>
 
 <style src="@/assets/css/style.css">
+
 </style>
