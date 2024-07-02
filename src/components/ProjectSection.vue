@@ -1,6 +1,8 @@
 <template>
     <h1 class="headmain">Projects</h1>
-        <div class="body" v-if="$store.state.projects.length > 0">
+        <div class="body" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" v-if="$store.state.projects.length > 0">
             <div class="row justify-content-center">
                 <div class="card my-3" v-for="project in $store.state.projects" :key="project">
             <div class="poster">
@@ -47,7 +49,7 @@
     bottom: -100px;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg,rgb(0, 0, 0) 40%, transparent);
+    background: linear-gradient(0deg,#0A1C3C 40%, transparent);
     transition: 0.5s;
     z-index: 1;
 }
@@ -93,14 +95,14 @@
     margin-top: 15px;
 }
 .details .buttons a button{
-    background: rgb(0, 0, 0);
+    background: #0A1C3C;
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
 .details .buttons a button:hover{
     background: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: #0A1C3C;
     transition: 0.3s;
 }
 @media screen and (width <600px){

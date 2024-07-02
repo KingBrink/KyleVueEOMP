@@ -1,15 +1,15 @@
 <template>
-  <section id="resume">
+  <section id="resume" >
     <h1 class="headmain">Resume</h1>
     <div class="resCont" style="display:inline-block;">
         <div class="justify-content-center mx-2">
         <div class="row my-5 resRow"  v-for="resum in $store.state.resume" :key="resum">
-          <div class="col-md-6 my-1" data-aos="fade-up" data-aos-duration="1200" style="text-align: left;">
+          <div class="col-md-8 my-5" data-aos="fade-up" data-aos-duration="1200" style="text-align: left;">
                     <h6 class="my-4 text-primary" style=" margin-bottom: 20px;">📅  {{ resum.year }}</h6>
               <a class="personLink"><h2>{{ resum.place }}</h2></a>
               <div class="desc">{{ resum.description}}</div>
             </div>
-            <div class="col-md-6 imgCol my-1">
+            <div class="col-md-4 imgCol my-5">
               <img :src="resum.logo" alt="">
             </div>
     </div>
@@ -21,7 +21,7 @@ DOWNLOAD CV
     </div>
     </div>
     <div class="skilldiv">
-      <h1>Skills</h1>
+      <h1 class="headmain">Skills</h1>
     <div class="container-lg mt-4" style="display:inline-block;">
         <div class="row justify-content-center mx-2">
         <div class="col-md-2 mx-2 my-2 skillsCol"   v-for="skill in $store.state.skills" :key="skill">
@@ -37,6 +37,8 @@ DOWNLOAD CV
 
 
 <style scoped>
+
+
 .skilldiv{
 margin-top: 25px;
 }
@@ -85,7 +87,7 @@ align-items: center !important;
 }
 
 .resRow img{
-max-width: 250px;
+max-width: 150px;
 }
 .desc{
 /* mix-blend-mode: difference; */

@@ -1,11 +1,12 @@
 <template>
   <h1 class="headmain">Testimonials</h1>
-  <div class="container">
+  <div class="container  ">
     <div class="row" v-if="$store.state.testimonials.length > 0">
+      <div class="peeps col-md-4 my-3" v-for="testimonial in $store.state.testimonials"
+      :key="testimonial">
       <div
-        class="person col-4"
-        v-for="testimonial in $store.state.testimonials"
-        :key="testimonial"
+        class="person"
+       
       >
         <div class="lines"></div>
         <div class="cardImage">
@@ -14,11 +15,12 @@
         <div class="content">
           <div class="details mx-2">
             <h2>{{ testimonial.name }} {{ testimonial.surname }}</h2>
-            <h6 class="text-primary role">{{ testimonial.role }}</h6>
+            <h6 class=" role">{{ testimonial.role }}</h6>
             <div class="speech">{{ testimonial.quotes }}</div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -58,6 +60,7 @@
   inset: 0;
   background: black;
   overflow: hidden;
+
 }
 .person .lines::before {
   content: "";
@@ -69,7 +72,7 @@
   height: 200px;
   background: linear-gradient(
     transparent,
-    rgb(255, 255, 255),
+    rgb(255, 0, 0),
     rgb(255, 0, 0),
     transparent
   );
@@ -87,7 +90,8 @@
   content: "";
   position: absolute;
   inset: 0px;
-  background: rgb(255, 255, 255);
+  background: #0F4C75;
+  border: 4px solid black;
 }
 .person .cardImage {
   position: absolute;
@@ -124,11 +128,12 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  gap: 30px;
 }
 .person .content h2 {
   font-weight: 600;
   margin-top: 175px;
-  color: rgb(0, 0, 0);
+  color: #F2FBD5;
 }
 .card .content .details {
   padding: 3%;
@@ -137,11 +142,12 @@
 
 .role {
   font-weight: 500;
+  color: #42CFC7;
 }
 .speech {
   font-weight: 500;
   margin-top: 3%;
-  color: rgb(0, 0, 0);
+  color: #F2FBD5;
 }
 @media screen and (width <= 770px) {
   .peeps {

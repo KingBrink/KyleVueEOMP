@@ -1,5 +1,6 @@
 <template>
-   <div class="container">
+  <div class="about-space"></div>
+   <div class="container" data-aos="fade-down-right">
      <div class="row justify-content-center mt-4">
          <h1 class="headmain">About</h1>
        <div v-if="about?.length">
@@ -8,12 +9,12 @@
          </p>
        </div>
        <Spinner v-else />
-       <div class="row justify-content-center">
+       <div class="row justify-content-center text-center">
          <img
            src="https://kingbrink.github.io/all-images/images/photo.jpg"
            id="aboutimg"
            alt="profile"
-           class="img-fluid shadow rounded-top"
+           class="img-fluid"
            loading="lazy"
          />
        </div>
@@ -34,12 +35,30 @@
  </script>
  
  <style scoped>
+ .about-space{
+  padding: 50px;
+ }
  #aboutimg {
    width: 400px;
-   height: 350px;
+   height: 500px;
    margin-top: 15px;
-   border-radius: 40px;
+   border-radius:100%;
    display: inline-flex;
  }
+
+ @media (min-width:300px) and (max-width:500px){
+  #aboutimg {
+   width: 200px;
+   height: 200px;
+   margin-top: 15px;
+   border-radius:100%;
+   display: inline-flex;
+ }
+ .lead{
+  font-size:18px;
+ }
+ }
+
+
  </style>
  
