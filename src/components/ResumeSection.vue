@@ -20,7 +20,7 @@ DOWNLOAD CV
 
     </div>
     </div>
-    <div class="skilldiv">
+    <div class="skilldiv" data-aos="zoom-in">
       <h1 class="headmain">Skills</h1>
     <div class="container-lg mt-4" style="display:inline-block;">
         <div class="row justify-content-center mx-2">

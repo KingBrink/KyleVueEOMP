@@ -15,7 +15,7 @@
       
 
     </section>
-    <section class="row" id="project">
+    <section class="row" id="projects">
       <ProjectSection/>
 
     </section>

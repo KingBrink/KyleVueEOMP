@@ -1,6 +1,6 @@
 <template>
   <h1 class="headmain">Testimonials</h1>
-  <div class="container  ">
+  <div class="container">
     <div class="row" v-if="$store.state.testimonials.length > 0">
       <div class="peeps col-md-4 my-3" v-for="testimonial in $store.state.testimonials"
       :key="testimonial">
