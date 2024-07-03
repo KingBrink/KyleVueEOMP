@@ -38,10 +38,10 @@
              <div class="deats row mx-2 cinfo">
                <div class="">
                  <a href="mailto:kyle.brink1602@gmail.com" class="my-3 mail " style="font-size:15px;" mail><i
-                     class="fa fa-envelope"></i>kyle.brink1602@gmail.com</a>
+                     class="fa fa-envelope"></i><i class="bi bi-envelope"></i> kyle.brink1602@gmail.com</a>
                </div>
                <div class="col-12">
-                 <text class="" style="font-size:15px;"><i class="fa fa-phone"></i> +27 67 404 6393</text>
+                 <text class="" style="font-size:15px;"><i class="fa fa-phone"></i><i class="bi bi-telephone-fill"></i> +27 67 404 6393</text>
                </div>
              </div>
            </form>
