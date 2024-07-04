@@ -1,15 +1,15 @@
 <template>
-  <section id="resume" >
-    <h1 class="headmain">Resume</h1>
+  <section class="mt-5">
+    <h1 class="headmain" id="resume">Resume</h1>
     <div class="resCont" style="display:inline-block;">
         <div class="justify-content-center mx-2">
         <div class="row my-5 resRow"  v-for="resum in $store.state.resume" :key="resum">
-          <div class="col-md-8 my-5" data-aos="fade-up" data-aos-duration="1200" style="text-align: left;">
+          <div class="col-md-6 my-5" data-aos="fade-up" data-aos-duration="1200" style="text-align: left;">
                     <h6 class="my-4 text-primary" style=" margin-bottom: 20px;">📅  {{ resum.year }}</h6>
               <a class="personLink"><h2>{{ resum.place }}</h2></a>
               <div class="desc">{{ resum.description}}</div>
             </div>
-            <div class="col-md-4 imgCol my-5">
+            <div class="col-md-6 imgCol my-5">
               <img :src="resum.logo" alt="">
             </div>
     </div>
