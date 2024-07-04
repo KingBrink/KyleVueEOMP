@@ -7,15 +7,15 @@
        <div class="info animate__animated animate__fadeInDown animate__slow">
            <h1>I'm <span class="name">Kyle</span> Brink</h1>
            <p v-if="title">
-               <span> {{ title }}</span>
+               <span class="span"> {{ title }}</span>
            </p>
            <Spinner v-else/>
-           <button  class="button"> <a class="nav-link" href="#resume">Learn more</a></button>
+           <a class="button btn" href="#about">Learn More</a>
 
        <div class="footer-bar mx-4">
-       <div class="icons">
-           <a href="https://github.com/KingBrink" target="_blank"><i class="bi bi-github"></i></a>
-           <a href="https://www.linkedin.com/in/kyle-brink-3372232a0/" target="_blank"><i class="bi bi-linkedin"></i></a>
+       <div class="btn-group">
+           <a href="https://github.com/KingBrink" target="_blank" class="icons"><i class="bi bi-github"></i></a>
+           <a href="https://www.linkedin.com/in/kyle-brink-3372232a0/" target="_blank" class="icons"><i class="bi bi-linkedin"></i></a>
        </div>
        </div>
        </div>
@@ -50,18 +50,18 @@ onMounted(() => {
  
  </script>
  <style scoped>
-button {
-border: none;
+.button {
+border: 1px solid black;
 color: #fff;
+text-shadow: 1px 1px black;
 background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
-border-radius: 20px;
 background-size: 100% auto;
 font-family: inherit;
 font-size: 17px;
 padding: 0.6em 1.5em;
 }
 
-button:hover {
+.button:hover {
 background-position: right center;
 background-size: 200% auto;
 -webkit-animation: pulse 2s infinite;
@@ -106,14 +106,14 @@ animation: pulse512 1.5s infinite;
        
    }
    
-   .icons a {
+   .icons {
        font-size: 30px;
        color: #606163;
        margin-right: 15px;
        margin-left: 15px;
    }
 
-   .icons a:hover {
+   .icons:hover {
        color: blue;
    }
 
@@ -169,14 +169,14 @@ animation: pulse512 1.5s infinite;
        
    }
    
-   .icons a {
+   .icons {
        font-size: 25px;
        color: #606163;
        margin-right: 15px;
        margin-left: 15px;
    }
 }
-@media (min-width:501px) and (max-width:800px) {
+@media (min-width:501px) and (max-width:699px) {
    .home{
        gap:80px;
    height: 50vh;
@@ -199,7 +199,7 @@ animation: pulse512 1.5s infinite;
        color: #606163;
        line-height: 22px;
    }
-   .info a {
+   /* .info a {
        background: #212121;
        padding: 10px 18px;
        text-decoration: none;
@@ -207,19 +207,73 @@ animation: pulse512 1.5s infinite;
        display: inline-block;
         margin: 30px 0; 
        border-radius: 5px;
-   }
+   } */
    .icons{
        margin-left: 8%;
        margin-top: 100px;
    } 
-   .icons a {
+   .icons {
        font-size: 30px;
        color: #606163;
        margin-right: 20px;
    }
 
 }
+@media (min-width:700px) and (max-width:900px){
+    .home{
+       gap:60px;
+   height: 50vh;
+   }
+   .img-box{
+       background: url('https://kingbrink.github.io/all-images/images/wave8.png');
+       background-size:cover;
+       background-position: center;
+       width: 500px;
+   }
+   .main-img {
+       width: 250px;
+      
+   }
+   .info{
+    height: 300px;
+   }
+   .info h1{
+       font-size: 40px;
+       color: #212121;
+   }
+   .info p {
+       color: #606163;
+       line-height: 22px;
+   }
+   /* .info a {
+       background: #212121;
+       padding: 10px 18px;
+       text-decoration: none;
+       color: #fff;
+       display: inline-block;
+        margin: 30px 0; 
+       border-radius: 5px;
+   } */
+   .icons{
+       margin-left: 8%;
+       margin-top: 0px;
+   } 
+   .icons {
+       font-size: 30px;
+       color: #606163;
+       margin-right: 20px;
+   }
+   /* button {
+ margin: 0px 0px;
+ padding: 0px 0px;
+ background-size: 70%;
+} */
+.span{
+    font-size: 20px;
+}
 
+} 
+/* 
 button {
  display: flex;
  align-items: center;
@@ -239,7 +293,7 @@ button {
  position: relative;
  overflow: hidden;
  transition: all 0.5s ease;
-}
+} */
 
 button:active {
  transform: scale(0.9);

@@ -6,7 +6,7 @@
     <section class="row" id="about">
       <AboutSection />
     </section>
-    <section class="row" id="resume">
+    <section class="row">
       <ResumeSection/>
 
     </section>

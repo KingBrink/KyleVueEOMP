@@ -2,7 +2,8 @@
   <nav class="navbar fixed-top mr-4">
     <div class="container">
       <router-link class="navbar-brand" to="/">
-        <img class="img-fluid w" src="https://kingbrink.github.io/all-images/images/logo.png" alt="logo">
+        <!-- <img class="img-fluid w" src="https://kingbrink.github.io/all-images/images/logo.png" alt="logo"> -->
+         <H3>Kyle B</H3>
       </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
