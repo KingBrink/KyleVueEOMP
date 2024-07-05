@@ -1,6 +1,6 @@
 <template>
     
-   <div class="container-fluid home">
+   <div class="container-fluid home" id="home">
        <div class="img-box animate__animated animate__fadeInUp animate__slow" >
            <img src="https://kingbrink.github.io/all-images/images/kyle8.PNG" class="main-img" alt="" loading="lazy">
        </div>
